@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 var articles = {
-   'article-one' : {
+   'artcle-one' : {
   
     title: 'Article one Rohit Mittal',
     heading:'Article One',
@@ -19,14 +19,10 @@ var articles = {
                 This is the content for my first article.This is the content for my first article.
                 This is the content for my first article.This is the content for my first article.
                 This is the content for my first article.This is the content for my first article.
-             </p>
-             <p>
-                This is the content for my first article.This is the content for my first article.
-                This is the content for my first article.This is the content for my first article.
-                This is the content for my first article.This is the content for my first article.
              </p> `
+             
       },
-   'article-two' : {
+    'article-two' : {
       title: 'Article Two Rohit Mittal',
       heading:'Article Two',
       date:'Sept 27,2016',
@@ -39,12 +35,8 @@ var articles = {
                 This is the content for my second article.This is the content for my second article.
                 This is the content for my second article.This is the content for my second article.
                 This is the content for my second article.This is the content for my second article.
-             </p>
-             <p>
-                This is the content for my second article.This is the content for my second article.
-                This is the content for my second article.This is the content for my second article.
-                This is the content for my second article.This is the content for my second article.
              </p> `
+            
     },
    'article-three' : {
         title: 'Article Three Rohit Mittal',
@@ -59,12 +51,8 @@ var articles = {
                 This is the content for my third article.This is the content for my third article.
                 This is the content for my third article.This is the content for my third article.
                 This is the content for my third article.This is the content for my third article.
-             </p>
-             <p>
-                This is the content for my third article.This is the content for my third article.
-                This is the content for my third article.This is the content for my third article.
-                This is the content for my third article.This is the content for my third article.
-             </p> `
+             </p>`
+            
     }
 };
     function createTemplate(data){
