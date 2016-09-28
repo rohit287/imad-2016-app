@@ -74,7 +74,7 @@ var articles = {
         var content=data.content;
     
 var htmlTemplate = `
-{
+
 <html>
     <head>
         <title>
@@ -111,12 +111,16 @@ app.get('/', function (req, res) {
 });
 
 
-app.get('/articleName',function (req, res) 
+app.get('/artcle-one',function (req, res) 
 //articleName == article-one
 //articles[articleName] == {} content for article one
 {
     var articleName = req.parans.articleName;
- res.send(createTemplate(articles[articleName]));
+ res.send(createTemplate(articleOne));
+});
+
+app.get('article-three',function (req,res)
+{res.sendFile(path.join(__dirname, 'ui','article-three.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {
