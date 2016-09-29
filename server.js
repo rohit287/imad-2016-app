@@ -99,12 +99,13 @@ app.get('/', function (req, res) {
 });
 
 
-app.get('/artcle-one',function (req, res) 
+app.get('/article-one',function (req, res) {
 //articleName == article-one
 //articles[articleName] == {} content for article one
-{
-    var articleName = req.parans.articleName;
- res.send(createTemplate(articleOne));
+res.send(createTemplate(articleOne));
+});
+app.get('/article-two',function(req,res){
+    res.sendFile(path.join(__dirname, 'ui','article-two.html'));
 });
 
 app.get('article-three',function (req,res)
