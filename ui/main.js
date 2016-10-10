@@ -1,7 +1,6 @@
 // Counter code
 var button = document.getElementById('counter');
 
-var counter = 0;
 button.onclick = function () {
     
     //Create a request object
@@ -15,9 +14,11 @@ button.onclick = function () {
      if(request.readyState === XMLHttpRequest.DONE)
      {
          //take some action
-         if(request.status === 200) 
+         if (request.status === 200) 
          { 
-             var counte = request.responseText;
+             var counter = request.responseText;
+             var span = document.getElementById('count');
+             span.innerHTML = counter.toString();
          }  
      }
      //not done yet
