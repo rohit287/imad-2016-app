@@ -1,7 +1,8 @@
 // Counter code
 var button = document.getElementById('counter');
 
-button.onclick = function () {
+button.onclick = function () 
+{
     
     //Create a request object
     var request = new XMLHttpRequest();
@@ -38,13 +39,12 @@ submit.onclick = function()
   // Capture a list of names and render it as a list 
   var names = ['name1','name2','name3','name4'];
   var list = '';
-  for (var i=0;i<names.length;i++)
+  for (var i=0; i <names.length;i++)
   {
-      list += '<li>' + 'names[i]' + '</li>';
+      list += '<li>' + names[i] + '</li>';
   }
   var ul = document.getElementById('namelist');
   ul.innerHTML = list;
 };
-  }
   
-};
+  
